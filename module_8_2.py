@@ -17,9 +17,7 @@ def calculate_average(*numbers):
         return None
     try:
         local_sum = personal_sum(*numbers)
-        # print(local_sum[0])
-        # print(len(*numbers))
-        # print(local_sum[1])
+
 
         return local_sum[0] / (len(*numbers) - local_sum[1])
     except ZeroDivisionError:
